@@ -1,287 +1,191 @@
 ---
 layout: default
-title: Configuration
+title: 01 - Functions and Variables
 nav_order: 2
 ---
-
-# Configuration
-{: .no_toc }
-
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
-{: .fs-6 .fw-300 }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
+### Agenda:
+- 00-Getting Started Recap
+- Parameters & Arguments
+- Formatting Strings or str
+- Commenting Code
+- Integers or int
+- Floating Point Numbers
+- Homework
 ---
-
-View this site's [\_config.yml](https://github.com/just-the-docs/just-the-docs/tree/main/_config.yml) file as an example.
-
-## Site logo
-
-```yaml
-# Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/just-the-docs.png"
+### Key Terms:
+- **Function** - The LEGO blocks of code that execute as a part of your program are called functions.
+- **Variable** - A parameter that is mutable. Meaning its value can be reassigned.
+- **Parameter** - Arguments taken by a function.
+---
+### 00-Getting Started Recap
+- We installed python and began to get comfortable with some basic Windows Shell commands. [Commands Cheat Sheet](https://lmu.box.com/s/tzbhj6y6366jyob1an4chafwzlj8katl)
+- Using these commands, we created a directory from which we will store and run all the code we write during these tutorials.
+- Our first coding project used the built-in print function *print()* to print "Hello, World!" to the screen.
+- This lead to an exploration of other built-in functions including *input()* which will allow the user to provide an input to the program.
+- We assigned that input to a variable called "name" and then talked about how to print that name back to the screen.
+```python
+name = input("What's your name? ")
+print("Hello, ")
+print(name)
 ```
-
-## Search
-
-```yaml
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
-
-search:
-  # Split pages into sections that can be searched individually
-  # Supports 1 - 6, default: 2
-  heading_level: 2
-  # Maximum amount of previews per search result
-  # Default: 3
-  previews: 3
-  # Maximum amount of words to display before a matched word in the preview
-  # Default: 5
-  preview_words_before: 5
-  # Maximum amount of words to display after a matched word in the preview
-  # Default: 10
-  preview_words_after: 10
-  # Set the search token separator
-  # Default: /[\s\-/]+/
-  # Example: enable support for hyphenated search words
-  tokenizer_separator: /[\s/]+/
-  # Display the relative url in search results
-  # Supports true (default) or false
-  rel_url: true
-  # Enable or disable the search button that appears in the bottom right corner of every page
-  # Supports true or false (default)
-  button: false
+- Ultimately, we ended up with a script that would (rather crudely) say "Hello, Jason", substituting the user's input as the sentience's subject.
+- We concluded our discussion with a tease of the default arguments assigned in the *print()* function and hinted at various ways to structure our returned string.
+---
+### Parameters & Arguments
+- Let's open hello.py and rewind a bit and examine the visual side effect of having the results of our Hello World program appear on separate lines. We discussed this side effect in brief last week, but I want to re-examine it today for discussion in greater detail. 
+```python
+name = input("What's your name? ")
+print("Hello, ")
+print(name)
 ```
-
-## Mermaid Diagrams
-See [Code]({{ site.baseurl }}{% link docs/ui-components/code.md %}#mermaid-diagram-code-blocks) for more information.
-
-```yaml
-# Enable or disable support for mermaid diagrams (https://mermaid-js.github.io/mermaid/)
-# Supports true or false (default)
-mermaid_enabled: false
-mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.3"
-  # Configured theme of mermaid diagrams
-  # Pick an avaiable theme from https://mermaid-js.github.io/mermaid/#/theming
-  theme: "default"
-  # Additional configuration available matching pattern as defined in https://mermaid-js.github.io/mermaid/#/./Setup.
-  # For example,
-  # logLevel: 'fatal',
-  # sequence:
-  #   diagramMarginX: 50
-  #   actorMargin: 50
-  # gantt:
-  #   barGap: 4
-  #   topPadding: 50
+- Last week, we were bothered by the fact that our assigned variable *name* was printed to the screen on a separate line.
+- One of the ways to influence this behavior, is to include an argument to modify the functions behavior.
+- Looking at the [python documentation for the print function](https://docs.python.org/3/library/functions.html#print) we see that the print function takes an argument called *end* which, in its default state, will insert a new line (/n) after the function has returned its value.
+- By modifying the parameter of this argument in our function's first call, we can change the behavior of our program.
+```python
+name = input("What's your name? ")
+print("Hello, " end="")
+print(name)
 ```
-
-## Aux links
-
-```yaml
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
-
-# Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+- By providing *end=""* we are over-writing the default value of *end* such that it never creates a new line after this first print statement.
+- Parameters, therefore, are arguments that can be take by a function.
+---
+### Formatting Strings or str
+- I will briefly mention that you should be very careful about the use of quotation marks when formatting strings. Let's take a look at an errant example. 
+```python
+print("hello,"friend"")
 ```
-
-## Heading anchor links
-
-```yaml
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false
-heading_anchors: true
+- Notice how adding quotation marks as part of you strings can be challenging. This is a common challenge for many programmers and general convention would have you avoid it where possible.
+- Instead, general convention in the post python 3.6 era would have you use "formatted string literals" or "f-strings" when attempting to print formatted text to the screen.
+```python
+name = input("What's your name? ")
+print(f"hello, {name}")
 ```
-
-## External navigation links
-
-External links can be added to the navigation through the `nav_external_links` option.
-See [Navigation Structure]({{ site.baseurl }}{% link docs/navigation-structure.md %}#external-navigation-links) for more details.
-
-## Footer content
-
-```yaml
-# Footer content
-# appears at the bottom of every page's main content
-# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
-markup / liquid-based content.
-footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
-
-# Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
-
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
-gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+- Notice the f in ```Print(f"hello, {name}")```. This f is a special indicator to Python to treat this string in a special way. Going forward, this is going to be our preferred method for printing formatted strings to the screen.
+- In all of our collective experience working with computers, forms, other people and their use of our forms... we all know that... you should never expect that your user will cooperate with your inputs as you intended when writing the code.
+- Therefore, you will need to ensure that the input of your user is corrected or checked. It turns out that built into the string type is the ability to do several of these things. Let's explore some of the more common methods for cleaning up or pre-formatting user provided data. 
+- One of the most common errors to correct for when accepting strings is to remove whitespace.
+- By utilizing the method *strip* on *name*, it will strip all the whitespaces on the left and right of the users input. 
+```python
+name = input("What's your name? ")
+name = name.strip()
+print(f"hello, {name}")
 ```
-
-_note: `footer_content` is deprecated, but still supported. For a better experience we have moved this into an include called `_includes/footer_custom.html` which will allow for robust markup / liquid-based content._
-
-- the "page last modified" data will only display if a page has a key called `last_modified_date`, formatted in some readable date format
-- `last_edit_time_format` uses Ruby's DateTime formatter; see examples and more information [at this link.](https://apidock.com/ruby/DateTime/strftime)
-- `gh_edit_repository` is the URL of the project's GitHub repository
-- `gh_edit_branch` is the branch that the docs site is served from; defaults to `main`
-- `gh_edit_source` is the source directory that your project files are stored in (should be the same as [site.source](https://jekyllrb.com/docs/configuration/options/))
-- `gh_edit_view_mode` is `"tree"` by default, which brings the user to the github page; switch to `"edit"` to bring the user directly into editing mode
-
-## Color scheme
-
-```yaml
-# Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+- Rerunning this program, regardless of how many spaces you type before or after the name, it will strip off all the whitespace. 
+- Because we are collecting names, it might be beneficial to ensure that the name is capitalized so that the greeting reads correctly. 
+- Using the *title* method, it would title case the user's name.
+```python
+name = input ("What's your name? ")
+name = name.strip()
+name = name.title()
+print(f"hello, {name}")
 ```
-
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
-  }
-});
-</script>
-
-See [Customization]({{ site.baseurl }}{% link docs/customization.md %}) for more information.
-
-## Callouts
-
-To use this feature, you need to configure a `color` and (optionally) `title` for each kind of callout you want to use, e.g.:
-
-```yaml
-callouts:
-  warning:
-    title: Warning
-    color: red
+- Yes, it is possible to stack methods in your code. Having different methods act on the same variable is not uncommon, however, caution should be taken when stacking them. Python executes code from top to bottom, left to right, the same way we read in American English. 
+- Yet, there is still a more efficient way to format this code. To make it more pythonic.
+```python
+name = input ("What's your name? ")
+name = name.strip().title()
+print(f"hello, {name}")
 ```
-
-This uses the color `$red-000` for the background of the callout, and `$red-300` for the title and box decoration.[^dark] You can then style a paragraph as a `warning` callout like this:
-
-```markdown
-{: .warning }
-A paragraph...
+- This creates the same results as your previous code... but we can go even one step further.
+```python
+name = input("What's your name? ").strip().title()
+print(f"hello, {name}")
 ```
-
-[^dark]:
-    If you use the `dark` color scheme, this callout uses `$red-300` for the background, and `$red-000` for the title. 
-
-The colors `grey-lt`, `grey-dk`, `purple`, `blue`, `green`, `yellow`, and `red` are predefined; to use a custom color, you need to define its `000` and `300` levels in your SCSS files. For example, to use `pink`, add the following to your `_sass/custom/custom.scss` file:
-
-```scss
-$pink-000: #f77ef1;
-$pink-100: #f967f1;
-$pink-200: #e94ee1;
-$pink-300: #dd2cd4;
+- This works because of the way methods interact with functions.
+- Ok... enough about strings.
+---
+### Commenting Code
+- Comments are in integral part of any program. They can come in the form of module-level docstrings, or even inline explanations that help shed light on a complex function.
+- Comments serve two important functions: they help you remember what the code does, and they create a corpus of knowledge that other developers can skim to gain an understanding of how it all works very quickly. 
+- My big advice is EXCESSIVELY COMMENT YOUR CODE. You will forget what things do in your code or why you make the decision that you made... it is important to have those decisions canonized for your future self.
+- To write a comment in Python, simply put the hash mark *#* before your desired comment. Python ignores everything after the hash mark and up to the end of the line.
+- You can insert them anywhere in your code, even in line with other code. Them location of your comment tags will be a personal stylistic choice that you will make as a coder.
+- Comments should be short, sweet, and to the point. A max of 72 characters per comment line is the standard.
+- You will be expected to comment ALL code going forward.
+---
+### Integers or int
+- In Python, an integer is referred to as an int.
+- In the world of mathematics, we are familiar with +,-,*,/, and % operators. That last operator % or modulo operator may not be very familiar to you... but we will cover it in time. 
+- Python understands numbers or integers almost in the same ways that we as humans do. Meaning, it sees a number and recognizes that it can perform those same arithmetic operators on those numbers, just like humans.
+- Let's start a new python file called *calculator.py*. This will be our new file where we explore using python to complete some calculations and learn about integers.
+- Let's start by defining a few variables and doing some simple addition.
+```python
+x = 1
+y = 2
+z = x + y
+print(z)
 ```
-
-You can override the default `opacity` of the background for a particular callout, e.g.:
-
-```yaml
-callouts:
-  custom:
-    color: pink
-    opacity: 0.3
+- Naturally, when we run *python calculator.py* we get the result in the terminal window of 3. However, We can make this more interactive using the input function.
+```python
+x = input("What's x? ")
+y = input("What's y? ")
+z = x + y
+print(z)
 ```
-
-You can change the default opacity (`0.2`) for all callouts, e.g.:
-
-```yaml
-callouts_opacity: 0.3
+- oops... running this program, we discover that the output is incorrect as 12. We discussed this in brief last week... do you know why?
+- Last week, we saw how the + sign concatenates two strings. Because your input from your keyboard comes into the computer as text, it is treaded as a string. We, therefore, need to convert this input to that of another type. From string to integer. 
+```python
+x = input("What's x? ")
+y = input("What's y? ")
+z = int(x) + int(y)
+print(z)
 ```
-
-You can also adjust the overall level of callouts.
-The value of `callouts_level` is either `quiet` or `loud`;
-`loud` increases the saturation and lightness of the backgrounds.
-The default level is `quiet` when using the `light` or custom color schemes,
-and `loud` when using the `dark color scheme.`
-
-See [Callouts]({{ site.baseurl }}{% link docs/ui-components/callouts.md %}) for more information.
-
-## Google Analytics
-
-```yaml
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-5555555-55
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
+- The result shown is now correct. The use of int(x), is called "casting" where a value is temporarily changed from one type of variable (in this case, string) to another (here, an integer).
+- And to further clean this up, much like you can run multiple methods on a function, you can also call multiple functions on a function.
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+print(x + y)
 ```
-
-## Document collections
-
-By default, the navigation and search include normal [pages](https://jekyllrb.com/docs/pages/).
-You can also use [Jekyll collections](https://jekyllrb.com/docs/collections/) which group documents semantically together.
-
-For example, put all your test files in the `_tests` folder and create the `tests` collection:
-
-```yaml
-# Define Jekyll collections
-collections:
-  # Define a collection named "tests", its documents reside in the "_tests" directory
-  tests:
-    permalink: "/:collection/:path/"
-    output: true
-
-just_the_docs:
-  # Define which collections are used in just-the-docs
-  collections:
-    # Reference the "tests" collection
-    tests:
-      # Give the collection a name
-      name: Tests
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      # nav_exclude: true
-      # Fold the collection in the navigation
-      # Supports true or false (default)
-      # nav_fold: true
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      # search_exclude: true
+- The most inner function is run first, then the outer one is run. First, the input function is run. Then, the int function.
+- I think it is becoming most obvious from our many examples that there are many ways to solve a coding task. Which approach you take to programming is less important then that you make your code readable. You should use comments to give yourself and others clues about what you code is doing. Further, you should create code in a way that is readable.
+---
+### Floating Point Numbers
+- So we have discussed integers. But integers are whole real numbers and that type will not resolve numbers to their nearest decimal place; instead choosing to round to the nearest whole.
+- A floating point value is a real number that has a decimal point in it, such as 0.52
+- You can change your code to support floating point numbers by changing your input type to float.
+```python
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+print(x + y)
 ```
-The navigation for all your normal pages (if any) is displayed before those in collections.
+- This change allows your user to enter 1.2 and 3.4 to present a total of 4.6
+- Let’s imagine, however, that you want to round the total to the nearest integer. Looking at the Python documentation for round you’ll see that the available arguments are ```round(number[n, ndigits])```. Those square brackets indicate that something optional can be specified by the programmer. Therefore, you could do ```round(n)``` to round a digit to its nearest integer. Alternatively, you could code as follows:
+```python
+# Get the user's input
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
-You can reference multiple collections.
-This creates categories in the navigation with the configured names.
+# Create a rounded result
+z = round(x + y)
 
-```yaml
-collections:
-  tests:
-    permalink: "/:collection/:path/"
-    output: true
-  tutorials:
-    permalink: "/:collection/:path/"
-    output: true
-
-just_the_docs:
-  collections:
-    tests:
-      name: Tests
-    tutorials:
-      name: Tutorials
+# Print the result
+print(z)
 ```
-When *all* your pages are in a single collection, its name is not displayed.
+- The output will be rounded to the nearest integer.
+- What if we wanted to format the output of long numbers? For example, rather than seeing 1000, you may wish to see 1,000. You could modify your code as follows:
+```python
+# Get the user's input
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
-The navigation for each collection is a separate name space for page titles: a page in one collection cannot be a child of a page in a different collection, or of a normal page.
+# Create a rounded result
+z = round(x + y)
+
+# Print the formatted result
+print(f"{z:,}")
+```
+- Though quite cryptic, that ```print(f"{z:,}")``` creates a scenario where the outputted z will include commas where the result could look like 1,000 or 2,500. 
+---
+### **Homework**
+---
+#### The "Weight" of Mr. Einstein
+You might have heard that E = mc^2, wherein E represents energy (measured in Joules), m represents mass (measured in kilograms), and c represents the speed of light (measured approximately as 300000000 meters per second), per Albert Einstein et al. 
+
+In a file called einstein.py, implement a program in Python that prompts the user for mass as an integer (in kilograms) and then outputs the equivalent number of Joules as an integer. Assume that the user will input an integer.
+
+##### Homework Hints
+- Recall that input returns a str.
+- Recall that int can convert a str to an int.
+- Recall that Python comes with several built-in functions.
