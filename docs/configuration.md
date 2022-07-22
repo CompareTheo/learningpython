@@ -4,8 +4,7 @@ title: 01 - Functions and Variables
 nav_order: 2
 ---
 # [](#01-Functions)01 - Functions and Variables
-## [](#Introduction)Introduction
-### [](#Agenda)Agenda:
+### [](#Agenda)Lesson Outline:
 - 00-Getting Started Recap
 - Parameters & Arguments
 - Formatting Strings or str
@@ -175,7 +174,7 @@ print(f"{z:,}")
 ```
 - Though quite cryptic, that ```print(f"{z:,}")``` creates a scenario where the outputted z will include commas where the result could look like 1,000 or 2,500. 
 ---
-### **Homework**
+### Homework
 ---
 #### The "Weight" of Mr. Einstein
 You might have heard that E = mc^2, wherein E represents energy (measured in Joules), m represents mass (measured in kilograms), and c represents the speed of light (measured approximately as 300000000 meters per second), per Albert Einstein et al. 
