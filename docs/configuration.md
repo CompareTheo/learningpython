@@ -3,7 +3,9 @@ layout: default
 title: 01 - Functions and Variables
 nav_order: 2
 ---
-### Agenda:
+# [](#01-Functions)01 - Functions and Variables
+## [](#Introduction)Introduction
+### [](#Agenda)Agenda:
 - 00-Getting Started Recap
 - Parameters & Arguments
 - Formatting Strings or str
