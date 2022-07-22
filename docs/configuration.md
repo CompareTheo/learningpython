@@ -154,6 +154,7 @@ print(x + y)
 ```
 - This change allows your user to enter 1.2 and 3.4 to present a total of 4.6
 - Let’s imagine, however, that you want to round the total to the nearest integer. Looking at the Python documentation for round you’ll see that the available arguments are ```round(number[n, ndigits])```. Those square brackets indicate that something optional can be specified by the programmer. Therefore, you could do ```round(n)``` to round a digit to its nearest integer. Alternatively, you could code as follows:
+
 ```python
 # Get the user's input
 x = float(input("What's x? "))
@@ -165,8 +166,10 @@ z = round(x + y)
 # Print the result
 print(z)
 ```
+
 - The output will be rounded to the nearest integer.
 - What if we wanted to format the output of long numbers? For example, rather than seeing 1000, you may wish to see 1,000. You could modify your code as follows:
+
 ```python
 # Get the user's input
 x = float(input("What's x? "))
