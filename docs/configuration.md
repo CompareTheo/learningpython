@@ -17,8 +17,8 @@ nav_order: 2
 ### 00-Getting Started Recap
 - We installed python and began to get comfortable with some basic Windows Shell commands. [Commands Cheat Sheet](https://lmu.box.com/s/tzbhj6y6366jyob1an4chafwzlj8katl)
 - Using these commands, we created a directory from which we will store and run all the code we write during these tutorials.
-- Our first coding project used the built-in print function *print()* to print "Hello, World!" to the screen.
-- This lead to an exploration of other built-in functions including *input()* which will allow the user to provide an input to the program.
+- Our first coding project used the built-in print function ```print()``` to print "Hello, World!" to the screen.
+- This lead to an exploration of other built-in functions including ```input()``` which will allow the user to provide an input to the program.
 - We assigned that input to a variable called "name" and then talked about how to print that name back to the screen.
 ```python
 name = input("What's your name? ")
@@ -27,6 +27,7 @@ print(name)
 ```
 - Ultimately, we ended up with a script that would (rather crudely) say "Hello, Jason", substituting the user's input as the sentience's subject.
 - We concluded our discussion with a tease of the default arguments assigned in the *print()* function and hinted at various ways to structure our returned string.
+
 ---
 ### Parameters & Arguments
 - Let's open hello.py and rewind a bit and examine the visual side effect of having the results of our Hello World program appear on separate lines. We discussed this side effect in brief last week, but I want to re-examine it today for discussion in greater detail. 
