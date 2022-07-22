@@ -12,11 +12,6 @@ nav_order: 2
 - Floating Point Numbers
 - Homework
 ---
-### Key Terms:
-- **Function** - The LEGO blocks of code that execute as a part of your program are called functions.
-- **Variable** - A parameter that is mutable. Meaning its value can be reassigned.
-- **Parameter** - Arguments taken by a function.
----
 ### 00-Getting Started Recap
 - We installed python and began to get comfortable with some basic Windows Shell commands. [Commands Cheat Sheet](https://lmu.box.com/s/tzbhj6y6366jyob1an4chafwzlj8katl)
 - Using these commands, we created a directory from which we will store and run all the code we write during these tutorials.
