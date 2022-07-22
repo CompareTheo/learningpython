@@ -47,6 +47,7 @@ print(name)
 ```
 - By providing *end=""* we are over-writing the default value of *end* such that it never creates a new line after this first print statement.
 - Parameters, therefore, are arguments that can be take by a function.
+
 ---
 ### Formatting Strings or str
 - I will briefly mention that you should be very careful about the use of quotation marks when formatting strings. Let's take a look at an errant example. 
@@ -92,6 +93,7 @@ print(f"hello, {name}")
 ```
 - This works because of the way methods interact with functions.
 - Ok... enough about strings.
+
 ---
 ### Commenting Code
 - Comments are in integral part of any program. They can come in the form of module-level docstrings, or even inline explanations that help shed light on a complex function.
@@ -101,6 +103,7 @@ print(f"hello, {name}")
 - You can insert them anywhere in your code, even in line with other code. Them location of your comment tags will be a personal stylistic choice that you will make as a coder.
 - Comments should be short, sweet, and to the point. A max of 72 characters per comment line is the standard.
 - You will be expected to comment ALL code going forward.
+
 ---
 ### Integers or int
 - In Python, an integer is referred to as an int.
@@ -138,6 +141,7 @@ print(x + y)
 ```
 - The most inner function is run first, then the outer one is run. First, the input function is run. Then, the int function.
 - I think it is becoming most obvious from our many examples that there are many ways to solve a coding task. Which approach you take to programming is less important then that you make your code readable. You should use comments to give yourself and others clues about what you code is doing. Further, you should create code in a way that is readable.
+
 ---
 ### Floating Point Numbers
 - So we have discussed integers. But integers are whole real numbers and that type will not resolve numbers to their nearest decimal place; instead choosing to round to the nearest whole.
@@ -175,6 +179,7 @@ z = round(x + y)
 print(f"{z:,}")
 ```
 - Though quite cryptic, that ```print(f"{z:,}")``` creates a scenario where the outputted z will include commas where the result could look like 1,000 or 2,500. 
+
 ---
 ### Homework
 ---
