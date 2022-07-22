@@ -12,6 +12,7 @@ nav_order: 2
 - Integers or int
 - Floating Point Numbers
 - Homework
+
 ---
 ### 00-Getting Started Recap
 - We installed python and began to get comfortable with some basic Windows Shell commands. [Commands Cheat Sheet](https://lmu.box.com/s/tzbhj6y6366jyob1an4chafwzlj8katl)
