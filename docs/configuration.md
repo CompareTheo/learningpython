@@ -4,13 +4,6 @@ title: 01 - Functions and Variables
 nav_order: 2
 ---
 # [](#01-Functions)01 - Functions and Variables
-
-### Key Terms:
-Term
-: Brief description of Term
-
----
-
 ### [](#Agenda)Lesson Outline:
 - 00-Getting Started Recap
 - Parameters & Arguments
@@ -33,7 +26,7 @@ print("Hello, ")
 print(name)
 ```
 - Ultimately, we ended up with a script that would (rather crudely) say "Hello, Jason", substituting the user's input as the sentience's subject.
-- We concluded our discussion with a tease of the default arguments assigned in the *print()* function and hinted at various ways to structure our returned string.
+- We concluded our discussion with a tease of the default arguments assigned in the ```print()``` function and hinted at various ways to structure our returned string.
 
 ---
 ### Parameters & Arguments
@@ -67,11 +60,11 @@ print("hello,"friend"")
 name = input("What's your name? ")
 print(f"hello, {name}")
 ```
-- Notice the f in ```Print(f"hello, {name}")```. This f is a special indicator to Python to treat this string in a special way. Going forward, this is going to be our preferred method for printing formatted strings to the screen.
+- Notice the f in ```print(f"hello, {name}")```. This f is a special indicator to Python to treat this string in a special way. Going forward, this is going to be our preferred method for printing formatted strings to the screen.
 - In all of our collective experience working with computers, forms, other people and their use of our forms... we all know that... you should never expect that your user will cooperate with your inputs as you intended when writing the code.
 - Therefore, you will need to ensure that the input of your user is corrected or checked. It turns out that built into the string type is the ability to do several of these things. Let's explore some of the more common methods for cleaning up or pre-formatting user provided data. 
 - One of the most common errors to correct for when accepting strings is to remove whitespace.
-- By utilizing the method *strip* on *name*, it will strip all the whitespaces on the left and right of the users input. 
+- By utilizing the method ```.strip()``` on *name*, it will strip all the whitespaces on the left and right of the users input. 
 ```python
 name = input("What's your name? ")
 name = name.strip()
@@ -79,7 +72,7 @@ print(f"hello, {name}")
 ```
 - Rerunning this program, regardless of how many spaces you type before or after the name, it will strip off all the whitespace. 
 - Because we are collecting names, it might be beneficial to ensure that the name is capitalized so that the greeting reads correctly. 
-- Using the *title* method, it would title case the user's name.
+- Using the ```.title()``` method, it would title case the user's name.
 ```python
 name = input ("What's your name? ")
 name = name.strip()
