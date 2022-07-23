@@ -3,7 +3,7 @@ layout: default
 title: 02 - Functions and Variables
 nav_order: 3
 ---
-# [](#01-Functions)01 - Functions and Variables
+# [](#01-Functions)02 - Functions and Variables
 ### [](#Agenda)Lesson Outline:
 - 00-Getting Started Recap
 - Parameters & Arguments
