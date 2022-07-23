@@ -35,7 +35,7 @@ nav_order: 2
 ### Functions & "Hello, World!"
 - A function is a block of code which only runs when it is called. You can pass data, known as parameters into a function. A function can return data as a result.
 - Python has catalog of build in functions, some of which we will explore today in our foray into the pythonic typed structure.
-![][https://lmu.box.com/s/dhqrvap99v4if7ry4or9p5suwf7hou2d)
+![](../../assets/images/small-image.png)
 
 ---
 ### Commenting Code
