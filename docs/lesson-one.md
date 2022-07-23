@@ -1,55 +1,38 @@
 ---
 layout: default
-title: 01 - Functions and "Hello, World!"
+title: 01 - "Hello, World!"
 nav_order: 2
 ---
 # [](#01-Functions)01 - Functions and Variables
 ### [](#Agenda)Lesson Outline:
-- 00-Getting Started Recap
-- Parameters & Arguments
-- Formatting Strings or str
-- Commenting Code
-- Integers or int
-- Floating Point Numbers
-- Homework
+- Installing Notepad ++ for Windows.
+- Introduction to the Windows Shell
+- Setting Up the Tutorial Environment
+- Functions & Hello, World!
+- Introducing Variables
 
 ---
-### 00-Getting Started Recap
-- We installed python and began to get comfortable with some basic Windows Shell commands. [Commands Cheat Sheet](https://lmu.box.com/s/tzbhj6y6366jyob1an4chafwzlj8katl)
-- Using these commands, we created a directory from which we will store and run all the code we write during these tutorials.
-- Our first coding project used the built-in print function ```print()``` to print "Hello, World!" to the screen.
-- This lead to an exploration of other built-in functions including ```input()``` which will allow the user to provide an input to the program.
-- We assigned that input to a variable called "name" and then talked about how to print that name back to the screen.
-```python
-name = input("What's your name? ")
-print("Hello, ")
-print(name)
-```
-- Ultimately, we ended up with a script that would (rather crudely) say "Hello, Jason", substituting the user's input as the sentience's subject.
-- We concluded our discussion with a tease of the default arguments assigned in the ```print()``` function and hinted at various ways to structure our returned string.
+### Installing Notepad++  for Windows
+- Download [Notepad++](https://notepad-plus-plus.org/downloads/)
+- You will want to download the 64-bit installer link to use the graphical installer with prompts.
+- Choose Installer language "English"
+- Follow the on-screen prompts; accepting all of the default settings to install Notepad++. 
+- You do not need to open Notepad++ once the installer has completed. We will open it later as a part of the tutorial.
 
 ---
-### Parameters & Arguments
-- Let's open hello.py and rewind a bit and examine the visual side effect of having the results of our Hello World program appear on separate lines. We discussed this side effect in brief last week, but I want to re-examine it today for discussion in greater detail. 
-```python
-name = input("What's your name? ")
-print("Hello, ")
-print(name)
-```
-- Last week, we were bothered by the fact that our assigned variable *name* was printed to the screen on a separate line.
-- One of the ways to influence this behavior, is to include an argument to modify the functions behavior.
-- Looking at the [python documentation for the print function](https://docs.python.org/3/library/functions.html#print) we see that the print function takes an argument called *end* which, in its default state, will insert a new line (/n) after the function has returned its value.
-- By modifying the parameter of this argument in our function's first call, we can change the behavior of our program.
-```python
-name = input("What's your name? ")
-print("Hello, " end="")
-print(name)
-```
-- By providing *end=""* we are over-writing the default value of *end* such that it never creates a new line after this first print statement.
-- Parameters, therefore, are arguments that can be take by a function.
+### Introduction to the Windows Shell
+- Windows PowerShell is a configuration management tool that brings some of the capabilities of the Linux command-line interface (CLI) control into the historically point-and-click Windows environment to manage Windows servers. 
+- Bash is the shell most common to other computer operating systems like Mac and Linux. Bash is more traditionally suited for development environments. However, because setting up true development environments are outside the scope of this tutorial, we are going to forgo installing a bash shell in our local Windows environments. 
+- Instead, we will take advantage of the Bash commands that are built into Windows PowerShell as a part of its capabilities as a Linux CLI. While these commands may not seem immediately useful, in my experience, it is helpful to have some basic comfort with the command line interface as it is the environment in which your scripts will run, as for input, and present errors. 
+- In an effort to become comfortable with the Windows Shell environment, we are going to setup our tutorial folder structure using only Windows PowerShell.
+- Changing directories = cd
+- Creating "directories" or "folders" = mkdir nameofdirectory
+- Making a file = New-Item nameofitem.extention
+- Make a folder for the tutorials in the directory of your choice. 
+- Create a hello.py file to complete today's tutorial.
 
 ---
-### Formatting Strings or str
+### Setting up the Tutorial Environment
 - I will briefly mention that you should be very careful about the use of quotation marks when formatting strings. Let's take a look at an errant example. 
 ```python
 print("hello,"friend"")
