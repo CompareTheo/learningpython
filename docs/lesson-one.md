@@ -50,14 +50,25 @@ print("Hello, world!")
 - This edit alone, however, will not allow your program to output what your user inputs. For that, we will need to introduce variables.
 
 ---
-### Commenting Code
-- Comments are in integral part of any program. They can come in the form of module-level docstrings, or even inline explanations that help shed light on a complex function.
-- Comments serve two important functions: they help you remember what the code does, and they create a corpus of knowledge that other developers can skim to gain an understanding of how it all works very quickly. 
-- My big advice is EXCESSIVELY COMMENT YOUR CODE. You will forget what things do in your code or why you make the decision that you made... it is important to have those decisions canonized for your future self.
-- To write a comment in Python, simply put the hash mark *#* before your desired comment. Python ignores everything after the hash mark and up to the end of the line.
-- You can insert them anywhere in your code, even in line with other code. Them location of your comment tags will be a personal stylistic choice that you will make as a coder.
-- Comments should be short, sweet, and to the point. A max of 72 characters per comment line is the standard.
-- You will be expected to comment ALL code going forward.
+### Introducing Variables
+- A variable is just a container for a value within your own program.
+- In your program, you can introduce your own variable in your program by editing it to read:]
+```python
+name = input("What's your name? ")
+print("hello, world")
+```
+- Notice that this equal sign in the middle of ```name = input("What's your name? ")``` has a special role in programming. This equal sign literally assigns what is on the right to what is on the left. Therefore, the value returned by ```input("What's your name? ")``` is assigned to name.
+- However, we are still not using the "name" variable in our code. The variable is being assigned but not used.
+- It would seem logical to try:
+```python
+name = input("What's your name? ")
+print("hello, name")
+```
+- But this only returns the string "name," we are still not using the variable itself. There are two ways to use the variable in this case.
+```python
+print("hello, " + name)
+print("hello, ", name) #print is a function that takes multiple arguments, so you can simply use a comma. 
+```
 
 ---
 ### Integers or int
