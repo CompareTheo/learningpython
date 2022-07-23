@@ -15,9 +15,12 @@ Over the summer of 2022, we will learn some of the basics of the python programm
 
 ## Getting started
 
-### Dependencies
+### Installing Python
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [Jekyll quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+- There are many different options/methods for installing Python. While there are best practices for managing your python development environment, we are not going to stress about these best practices for the purpose of learning the language.
+- For the purposes of this tutorial, we are going to install Miniconda which is a very bare bones graphical installer for python that handles all of the system PATH changes. 
+- We have chosen Miniconda because it comes packaged with pip3 & bare bones python. This will allow us to learn to manually manage packages and to have the graphical installer deal with the PATH settings necessary for interacting with the Windows shell.
+- It should be noted, that unlike other python distributions, Miniconda does not come with additional installs outside of the standard python distribution.
 
 ### Quick start: Use as a GitHub Pages remote theme
 
