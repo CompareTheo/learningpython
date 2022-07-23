@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 02 - Functions and Variables
-nav_order: 2
+nav_order: 3
 ---
 # [](#01-Functions)01 - Functions and Variables
 ### [](#Agenda)Lesson Outline:
