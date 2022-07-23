@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01 - Functions and Variables
+title: 02 - Functions and Variables
 nav_order: 2
 ---
 # [](#01-Functions)01 - Functions and Variables
