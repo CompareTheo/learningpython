@@ -22,15 +22,14 @@ Over the summer of 2022, we will learn some of the basics of the python programm
 - We have chosen Miniconda because it comes packaged with pip3 & bare bones python. This will allow us to learn to manually manage packages and to have the graphical installer deal with the PATH settings necessary for interacting with the Windows shell.
 - It should be noted, that unlike other python distributions, Miniconda does not come with additional installs outside of the standard python distribution.
 
-### Quick start: Use as a GitHub Pages remote theme
+### Special Instructions for Installing Miniconda
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-
-```yaml
-remote_theme: just-the-docs/just-the-docs
-```
-
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+- Download (https://docs.conda.io/en/latest/miniconda.html)[Miniconda]
+- Accept the license terms
+- Be sure to choose "Current user." This is particularly important given that we are going to want to update system path as a part of this installer.
+- Be sure to select "Add Miniconda to the system PATH environment variable.
+- When the install is finished, it is not necessary to open the "Anaconda Distribution Tutorial" or the "Getting Started with Anaconda".
+- You should now restart the computer. 
 
 ### Local installation: Use the gem-based theme
 
