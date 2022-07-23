@@ -36,6 +36,18 @@ nav_order: 2
 - A function is a block of code which only runs when it is called. You can pass data, known as parameters into a function. A function can return data as a result.
 - Python has catalog of build in functions, some of which we will explore today in our foray into the pythonic typed structure.
 ![](../../assets/images/small-image.png)
+- In this tutorial, we are going to begin by using the ```print()``` function and walk through the most common beginner program in all of computer programming. 
+- Open hello.py (created before) in Notepad++
+```python
+print("Hello, world!")
+```
+```print()``` [documentation](https://docs.python.org/3/library/functions.html#print)
+```input()``` [documentation](https://docs.python.org/3/library/functions.html#input)
+```python
+input("What's your name? ")
+print("Hello, world!")
+```
+- This edit alone, however, will not allow your program to output what your user inputs. For that, we will need to introduce variables.
 
 ---
 ### Commenting Code
