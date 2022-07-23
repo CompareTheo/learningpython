@@ -41,8 +41,8 @@ nav_order: 2
 ```python
 print("Hello, world!")
 ```
-```print()``` [documentation](https://docs.python.org/3/library/functions.html#print)
-```input()``` [documentation](https://docs.python.org/3/library/functions.html#input)
+- ```print()``` [documentation](https://docs.python.org/3/library/functions.html#print)
+- ```input()``` [documentation](https://docs.python.org/3/library/functions.html#input)
 ```python
 input("What's your name? ")
 print("Hello, world!")
