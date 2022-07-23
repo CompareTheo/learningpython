@@ -3,7 +3,7 @@ layout: default
 title: 01 - "Hello, World!"
 nav_order: 2
 ---
-# [](#01-Functions)01 - Functions and Variables
+# [](#01-Functions)01 - "Hello, World!"
 ### [](#Agenda)Lesson Outline:
 - Installing Notepad ++ for Windows.
 - Introduction to the Windows Shell
@@ -32,50 +32,10 @@ nav_order: 2
 - Create a hello.py file to complete today's tutorial.
 
 ---
-### Setting up the Tutorial Environment
-- I will briefly mention that you should be very careful about the use of quotation marks when formatting strings. Let's take a look at an errant example. 
-```python
-print("hello,"friend"")
-```
-- Notice how adding quotation marks as part of you strings can be challenging. This is a common challenge for many programmers and general convention would have you avoid it where possible.
-- Instead, general convention in the post python 3.6 era would have you use "formatted string literals" or "f-strings" when attempting to print formatted text to the screen.
-```python
-name = input("What's your name? ")
-print(f"hello, {name}")
-```
-- Notice the f in ```print(f"hello, {name}")```. This f is a special indicator to Python to treat this string in a special way. Going forward, this is going to be our preferred method for printing formatted strings to the screen.
-- In all of our collective experience working with computers, forms, other people and their use of our forms... we all know that... you should never expect that your user will cooperate with your inputs as you intended when writing the code.
-- Therefore, you will need to ensure that the input of your user is corrected or checked. It turns out that built into the string type is the ability to do several of these things. Let's explore some of the more common methods for cleaning up or pre-formatting user provided data. 
-- One of the most common errors to correct for when accepting strings is to remove whitespace.
-- By utilizing the method ```.strip()``` on *name*, it will strip all the whitespaces on the left and right of the users input. 
-```python
-name = input("What's your name? ")
-name = name.strip()
-print(f"hello, {name}")
-```
-- Rerunning this program, regardless of how many spaces you type before or after the name, it will strip off all the whitespace. 
-- Because we are collecting names, it might be beneficial to ensure that the name is capitalized so that the greeting reads correctly. 
-- Using the ```.title()``` method, it would title case the user's name.
-```python
-name = input ("What's your name? ")
-name = name.strip()
-name = name.title()
-print(f"hello, {name}")
-```
-- Yes, it is possible to stack methods in your code. Having different methods act on the same variable is not uncommon, however, caution should be taken when stacking them. Python executes code from top to bottom, left to right, the same way we read in American English. 
-- Yet, there is still a more efficient way to format this code. To make it more pythonic.
-```python
-name = input ("What's your name? ")
-name = name.strip().title()
-print(f"hello, {name}")
-```
-- This creates the same results as your previous code... but we can go even one step further.
-```python
-name = input("What's your name? ").strip().title()
-print(f"hello, {name}")
-```
-- This works because of the way methods interact with functions.
-- Ok... enough about strings.
+### Functions & "Hello, World!"
+- A function is a block of code which only runs when it is called. You can pass data, known as parameters into a function. A function can return data as a result.
+- Python has catalog of build in functions, some of which we will explore today in our foray into the pythonic typed structure.
+![][https://lmu.box.com/s/dhqrvap99v4if7ry4or9p5suwf7hou2d)
 
 ---
 ### Commenting Code
