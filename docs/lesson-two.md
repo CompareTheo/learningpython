@@ -197,5 +197,5 @@ In a file called einstein.py, implement a program in Python that prompts the use
 - Recall that Python comes with several built-in functions.
 
 ##### Homework Example Answers
-[Simple Example](https://lmu.box.com/s/twod95grubytsopwakw55154btqmiww5)
-[Formatted Example](https://lmu.box.com/s/y6120vhpy2br4vwargp0rxt3ljbvuwgn)
+- [Simple Example](https://lmu.box.com/s/twod95grubytsopwakw55154btqmiww5)
+- [Formatted Example](https://lmu.box.com/s/y6120vhpy2br4vwargp0rxt3ljbvuwgn)
