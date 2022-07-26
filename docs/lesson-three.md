@@ -20,6 +20,11 @@ print("Hello, " end="")
 print(name)
 ```
 - By providing ```end=""``` we are over-writing the default value of ```end``` such that it never creates a new line after this first print statement.
+- We also learned about the joys of "formatted sting literals" or "f-strings" to assist with formatting strings printed to the screen.
+```python
+name = input("What's your name? ")
+print(f"hello, {name}")
+```
 
 ---
 ### Homework Review
