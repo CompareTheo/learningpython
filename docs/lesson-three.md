@@ -40,4 +40,4 @@ In a file called einstein.py, implement a program in Python that prompts the use
 - Recall that Python comes with several built-in functions.
 
 #### Homework Check
-<script id="asciicast-vRmCPKq2FVw0LqrT6hc3QU4q7" src="https://asciinema.org/a/vRmCPKq2FVw0LqrT6hc3QU4q7.js" async autoplay=1 data-speed="2"></script>
+<script id="asciicast-vRmCPKq2FVw0LqrT6hc3QU4q7" src="https://asciinema.org/a/vRmCPKq2FVw0LqrT6hc3QU4q7.js" async data-autoplay=1 data-speed="2" data-rows="4"></script>
