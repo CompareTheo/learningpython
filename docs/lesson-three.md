@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 03 - Conditionals
+title: 03 - Conditions and Control Flow
 nav_order: 4
 ---
-# [](#01-Functions)03 - Conditionals
+# [](#01-Functions)03 - Conditionals and Control Flow
 ### [](#Agenda)Lesson Outline:
 - 01 - Recap
 - Homework Review
