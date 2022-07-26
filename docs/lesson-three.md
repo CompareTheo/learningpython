@@ -12,8 +12,14 @@ nav_order: 4
 - Homework
 
 ---
-### 01- Recap
-
+### 02- Recap
+- Last week we discussed ways to influence the behavior of our functions by modifying the arguments that the function takes.
+```python
+name = input("What's your name? ")
+print("Hello, " end="")
+print(name)
+```
+- By providing ```end=""``` we are over-writing the default value of ```end``` such that it never creates a new line after this first print statement.
 
 ---
 ### Homework Review
