@@ -38,3 +38,6 @@ In a file called einstein.py, implement a program in Python that prompts the use
 - Recall that input returns a str.
 - Recall that int can convert a str to an int.
 - Recall that Python comes with several built-in functions.
+
+#### Homework Check
+<script id="asciicast-vRmCPKq2FVw0LqrT6hc3QU4q7" src="https://asciinema.org/a/vRmCPKq2FVw0LqrT6hc3QU4q7.js" async></script>
