@@ -25,6 +25,8 @@ print(name)
 name = input("What's your name? ")
 print(f"hello, {name}")
 ```
+- Further, we explored two numeric data types in python, integers (int) and floats (float). 
+- Remember that python understands both integers and floats in the same way that humans do and is capable of seeing these characters as strings, integers, or floats. Thus, performing the required fuctions available to each type, including arithmetic fuctions.
 
 ---
 ### Homework Review
@@ -37,3 +39,6 @@ In a file called einstein.py, implement a program in Python that prompts the use
 
 #### Homework Check
 <script id="asciicast-vRmCPKq2FVw0LqrT6hc3QU4q7" src="https://asciinema.org/a/vRmCPKq2FVw0LqrT6hc3QU4q7.js" async data-autoplay="1" data-loop="1" data-speed="2" data-rows="4" data-cols="80"></script>
+
+---
+### Built-in Functions
