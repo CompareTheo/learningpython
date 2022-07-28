@@ -45,9 +45,10 @@ In a file called einstein.py, implement a program in Python that prompts the use
 - To this point we have used several of the python built-in functions. However, it might be nice create our own functions! 
 - Let's begin by looking at the last version of hello.py we discussed last week.
 ```python
-# Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
+#Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
 name = input("What's your name? ").strip().title()
 
-# Print the output
+#Print the output
 print(f"hello, {name}")
 ```
+
