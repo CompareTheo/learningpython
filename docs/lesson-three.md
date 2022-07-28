@@ -42,12 +42,22 @@ In a file called einstein.py, implement a program in Python that prompts the use
 
 ---
 ### Defining Functions
-- To this point we have used several of the python built-in functions. However, it might be nice create our own functions! 
-- Let's begin by looking at the last version of hello.py we discussed last week.
+- To this point we have used several of the python built-in functions. However, it might be nice create our own functions!
+- Creating your own functions are a great way to nicely package reusable blocks of code. 
+- Let's begin by looking at the last version of hello.py we discussed in the last session.
 ```python
 # Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
 name = input("What's your name? ").strip().title()
 # Print the output
 print(f"hello, {name}")
 ```
-
+- It might be possible to better our code by creating our own special function that says "hello" for us.
+- Let's start from scratch:
+```python
+def hello()
+  print("hello")
+  
+name = input("What's your name? ")
+hello()
+print(name)
+```
