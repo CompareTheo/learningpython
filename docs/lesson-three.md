@@ -56,7 +56,6 @@ print(f"hello, {name}")
 ```python
 def hello()
   print("hello")
-  
 name = input("What's your name? ")
 hello()
 print(name)
