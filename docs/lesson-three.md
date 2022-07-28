@@ -41,4 +41,13 @@ In a file called einstein.py, implement a program in Python that prompts the use
 <script id="asciicast-vRmCPKq2FVw0LqrT6hc3QU4q7" src="https://asciinema.org/a/vRmCPKq2FVw0LqrT6hc3QU4q7.js" async data-autoplay="1" data-loop="1" data-speed="2" data-rows="4" data-cols="80"></script>
 
 ---
-### Built-in Functions
+### Defining Functions
+- To this point we have used several of the python built-in functions. However, it might be nice create our own functions! 
+- Let's begin by looking at the last version of hello.py we discussed last week.
+```python
+# Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
+name = input("What's your name? ").strip().title()
+
+# Print the output
+print(f"hello, {name}")
+```
