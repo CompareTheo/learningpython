@@ -80,12 +80,24 @@ greet(name)
 ### Returning Values
 - You can imagine many scenarios where you don't just want a function to perform an action, but also to return a value back to the main function.
 - That is to say, we might want a function to perform an action using the returned value of a seperate function in our code. In the example below, a more "reusable" seperate function.
-- Let's look again at our Einstein homework assignment:
+- Let's build a calculator to compute the square of a user provided number. 
+- We start by defining the main function of our code. The major actions that our code should take on execution.
 ```python
-e = ""
-c = int(300000000)
-m = int(input("Please provide a mass in Kilograms: "))
-csquare = c*c
-e = m*csquare
-print(f"The energy produced by this mass is {e}")
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+```
+- This code should be fairly clear to this point. However, you might be asking youself, "Can python just square something? Is square a function I can use?" 
+- In fact, you might have been asking that during the pervious homework assignment too and googling found that there is no such function in Python.
+- The way mathematically that numbers are squared is to multiply the number by itself.
+- So because, as a part of our main function, we have called a function ```square``` we need to define that function for our code to complete. 
+```python
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+def square(n):
+    return n * n
+    
+main()
 ```
