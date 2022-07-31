@@ -81,7 +81,7 @@ greet(name)
 - You can imagine many scenarios where you don't just want a function to perform an action, but also to return a value back to the main function.
 - That is to say, we might want a function to perform an action using the returned value of a seperate function in our code. In the example below, a more "reusable" seperate function.
 - Let's look again at our Einstein homework assignment:
-```Python
+```python
 #Defining our known variables
 e = ""
 c = int(300000000)
