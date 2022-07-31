@@ -82,19 +82,10 @@ greet(name)
 - That is to say, we might want a function to perform an action using the returned value of a seperate function in our code. In the example below, a more "reusable" seperate function.
 - Let's look again at our Einstein homework assignment:
 ```python
-#Defining our known variables
 e = ""
 c = int(300000000)
-
-#Asking for the user input of a mass
 m = int(input("Please provide a mass in Kilograms: "))
-
-#Arithmetically defining c squared
 csquare = c*c
-
-#Perfoming the calucation of Einstein's famous equation.
 e = m*csquare
-
-#Printing the formatted result to the screen.
 print(f"The energy produced by this mass is {e}")
 ```
