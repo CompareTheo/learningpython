@@ -66,11 +66,11 @@ print(f"hello, {name}")
 # Begin by defining our new function that will greet the user of our script. We are also including the name of the variable we will want to pass to the function for its use when the function is called.
 def greet(name):
   # Use a formated string literal to easily format the string greeting we want to write to the screen.
-  print(f"Hello, {name}. Good Morning!")
+    print(f"Hello, {name}. Good Morning!")
   # Use the same format as before, asking for, and assigning the user's input to a variable name.
 name = input("What's your name? ")
 # Call our function and pass it the variable name.
 greet(name)
 ```
-- Notice that everything under ```def hello)``` is indented.
+- Notice again that everything under ```def greet``` is indented.
 - Python is an indented langage. It uses indentation to understanding what is part of the above fuction. Therefore, everything in the ```hello``` function must be indented.
