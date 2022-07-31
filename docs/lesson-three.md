@@ -8,6 +8,7 @@ nav_order: 4
 - 01 - Recap
 - Homework Review
 - Defining Functions
+- Returning Values
 - Conditionals
 - Homework
 
@@ -41,7 +42,7 @@ In a file called einstein.py, implement a program in Python that prompts the use
 <script id="asciicast-vRmCPKq2FVw0LqrT6hc3QU4q7" src="https://asciinema.org/a/vRmCPKq2FVw0LqrT6hc3QU4q7.js" async data-autoplay="1" data-loop="1" data-speed="2" data-rows="4" data-cols="80"></script>
 
 ---
-### More on Functions
+### Defining Functions
 - Using scripting langages to accomplish tasks in your work is akin to having LEGO bricks you can use to build the things you might need.
 - However, you might not want to always rebult the same LEGO structures over and over again. Be that for use across a variety of projects, or because you might want to use the same functionality repeatedly witin the single project of your focus.
 - To this point we have used several of the python built-in functions. However, it might be nice create our own functions!
@@ -68,9 +69,12 @@ def greet(name):
   # Use a formated string literal to easily format the string greeting we want to write to the screen.
     print(f"Hello, {name}. Good Morning!")
   # Use the same format as before, asking for, and assigning the user's input to a variable name.
-name = input("What's your name? ")
+name = input("What's your name? ").strip().title()
 # Call our function and pass it the variable name.
 greet(name)
 ```
 - Notice again that everything under ```def greet``` is indented.
-- Python is an indented langage. It uses indentation to understanding what is part of the above fuction. Therefore, everything in the ```hello``` function must be indented.
+- Python is an indented langage. It uses indentation to understanding what is part of the above fuction. Therefore, everything in the ```greet``` function must be indented.
+
+---
+### Returning Values
