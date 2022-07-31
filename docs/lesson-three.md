@@ -42,8 +42,10 @@ In a file called einstein.py, implement a program in Python that prompts the use
 
 ---
 ### Defining Functions
+- Using scripting langages to accomplish tasks in your work is akin to having LEGO bricks you can use to build the things you might need.
+- However, you might not want to always rebult the same LEGO structures over and over again. Be that for use across a variety of projects, or because you might want to use the same functionality repeatedly witin the single project of your focus.
 - To this point we have used several of the python built-in functions. However, it might be nice create our own functions!
-- Creating your own functions are a great way to nicely package reusable blocks of code. 
+- Creating your own functions are a great way to nicely package reusable blocks of code.
 - Let's begin by looking at the last version of hello.py we discussed in the last session.
 ```python
 # Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
@@ -54,9 +56,11 @@ print(f"hello, {name}")
 - It might be possible to better our code by creating our own special function that says "hello" for us.
 - Let's start from scratch:
 ```python
-def hello()
+def hello():
   print("hello")
 name = input("What's your name? ")
 hello()
 print(name)
 ```
+- Notice that everything under ```def hello)``` is indented.
+- Python is an indented langage. It uses indentation to understanding what is part of the above fuction. Therefore, everything in the ```hello``` function must be indented.
