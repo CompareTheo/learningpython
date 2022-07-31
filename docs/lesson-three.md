@@ -46,14 +46,13 @@ In a file called einstein.py, implement a program in Python that prompts the use
 - However, you might not want to always rebult the same LEGO structures over and over again. Be that for use across a variety of projects, or because you might want to use the same functionality repeatedly witin the single project of your focus.
 - To this point we have used several of the python built-in functions. However, it might be nice create our own functions!
 - Creating your own functions are a great way to nicely package reusable blocks of code.
-#### Syntax of a Function
 - A properly defined function consists of the following components.
   1. Keyword ```def``` that marks the start of the function header.
   2. A function name to uniquely identify the function. (Convention is all lowercase with an underscore to seperate words in the function name.)
   3. Parameters through which we pass values to a function. (These are optional.)
   4. A colon (:) to mark the end of the function header.
   5. One or more valid pythong statements that make up the function body. Statements must have the same indentation level (usually 4 spaces).
-#### Writing Functions
+
 - Let's begin by looking at the last version of hello.py we discussed in the last session.
 ```python
 # Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
