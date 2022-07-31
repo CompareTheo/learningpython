@@ -99,3 +99,9 @@ def square(n):
     return n * n
 main()
 ```
+- Rather than simply printing the calculation of ```n * n```, you may want a function to retun the value of this caluclation back to another part of your program. This "passing back" of a value we call a ```return``` value.
+- Effectively, ```x``` is passed to ```square```. Then, the calculation of ```x * x``` is retuned back to the main function.
+- This will allow us to wholesale reuse this square function over and over again, but in our current script and in any future scripts we might write.
+
+---
+### Conditionals
