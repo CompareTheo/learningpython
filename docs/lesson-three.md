@@ -194,7 +194,7 @@ else x == y:
 
 ---
 ### Homework
-#### "42", Wire Hanger, Meat Hook, Baseball Bat"
+#### "42"
 
 >“All right,” said the computer, and settled into silence again. The two men fidgeted. The tension was unbearable.
 >“You’re really not going to like it,” observed Deep Thought.
