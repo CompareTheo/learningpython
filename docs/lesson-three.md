@@ -5,7 +5,7 @@ nav_order: 4
 ---
 # [](#01-Functions)03 - Conditionals and Control Flow
 ### [](#Agenda)Lesson Outline:
-- 01 - Recap
+- 02 - Recap
 - Homework Review
 - Defining Functions
 - Returning Values
@@ -172,3 +172,42 @@ elif x > y:
 elif x == y:
     print("x is equal to y")
 ```
+- In this control flow, the first ```if``` statement is evaluated. If this statement is found to be true, all the ```elif``` statements will not be run at all.
+- Our code can be represented as follows:
+![](../../assets/images/flow2.png)
+- While your computer may not noteice a difference between the first instance and this revision. Consider how a much time a simple decision like this saves when running in an online data center performing billions or trillions of operations like this per day. 
+- As effecent coders, it is our task to be mindful of the complexity of our operations and to midigate wasted steps (and time) where possible. Unneccessary complexity often leads to failed/unstable code. 
+- There is one final improvement we can make to our program. Take note how logically ```elif x == y``` is not a necessary evaluation to run. After all, if logically x is not lesss than y AND x is not greater than y, x MUST be equal y.
+- In this case, we can create a "catch-all," default outcome using an else statement. We can revise as follows:
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+else x == y:
+    print("x is equal to y")
+```
+- Noticed when graphed, how the relative complexity of this program has decreased through our revision.
+![](../../assets/images/flow3.png)
+
+---
+### Homework
+#### "42", Wire Hanger, Meat Hook, Baseball Bat"
+
+>“All right,” said the computer, and settled into silence again. The two men fidgeted. The tension was unbearable.
+>“You’re really not going to like it,” observed Deep Thought.
+>“Tell us!”
+>“All right,” said Deep Thought. “The Answer to the Great Question…”
+>“Yes…!”
+>“Of Life, the Universe and Everything…” said Deep Thought.
+>“Yes…!”
+>“Is…” said Deep Thought, and paused.
+>“Yes…!”
+>“Is…”
+>“Yes…!!!…?”
+>“Forty-two,” said Deep Thought, with infinite majesty and calm.”
+>— The Hitchhiker’s Guide to the Galaxy, Douglas Adams
+
+In deep.py, implement a program that prompts the user for the answer to the Great Question of Life, the Universe and Everything, outputting Yes if the user inputs 42 or (case-insensitively) forty-two or forty two. Otherwise output No.
