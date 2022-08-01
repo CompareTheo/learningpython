@@ -9,6 +9,7 @@ nav_order: 4
 - Homework Review
 - Defining Functions
 - Returning Values
+- Libraries
 - Conditionals
 - if Statements
 - Control Flow, elif, and else
@@ -106,6 +107,18 @@ main()
 - This will allow us to wholesale reuse this square function over and over again, but in our current script and in any future scripts we might write.
 
 ---
+### Libraries
+- A (software) library is a collection of modules that contain fuctions for use by other programs. 
+- The [Python standard library](https://docs.python.org/3/library/) is a suite of modules that come with Python itself.
+- Many additional libraries are available from [PyPI](https://pypi.org/) the Python Package Index.
+- Two major take aways from this discussion are:
+  1. Python libraries allow you to extend the functionality of your scripts beyond that which is "standard" within the context of installed Python. You can use other people's code in your own scripts.
+  2. By writing our own functions, we can create custom libraries of our own to complete repetative (often challenging) tasks across many different coding projects we might be working on.
+
+- We are not going to spend a ton of time on Python libraries yet, but I wanted to make you aware that they exists. 
+- I do not encourage the use of libraries yet, and will not provide an example of their use until we are sufficiently ready for their use. 
+
+---
 ### Conditionals
 - Conditionals allow you, the programmer, to allow your program to make decisions.
 - Built within Python are a set of "operators" that are used to ask mathematical questions. (Different from mathamatical operators which perform an arethmetic function, these operators allow you to ask math based questions.)
@@ -129,3 +142,33 @@ if x < y:
 ```
 - Notice how your code takes the input of the user for both x and y, casts them as inegers and saves them into their respective x and y variables. Then, the ```if``` statement compares x and y. If the condition of ```x < y``` is met, the print statement is executed.
 - ```if``` statements use ```bool``` or boolen values (true or false) to decide whether or not to execute. If the statement ```x < y``` is true, the compiler will register it as ```true``` and execute the code.
+
+---
+### Control Flow, elif, and else
+- Obviously, that first example does not cover all of the possible solutions for x and y. We should account for all possible variations in our code. So we modify it in the follow way:
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+if x < y:
+    print("x is less than y")
+if x > y:
+    print("x is greater than y")
+if x == y:
+    print("x is equal to y")
+```
+- Now, we are providing a series of ```if``` statements. The ```if``` statements are evaluated in the order in which they appear in your code. "left to right... top to bottom."
+- This flow of decisions is called "control flow."
+- The logic of our script could be graphed as follows:
+![](../../assets/images/flow1.png)
+- However, it is painfully obvious to us that asking three consecutive quesions is not the best use of time. After all, not all three questions can have an outcome of ```True```.
+- We can revise our script using ```elif``` to allow the program to make less decisions.
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+elif x == y:
+    print("x is equal to y")
+```
