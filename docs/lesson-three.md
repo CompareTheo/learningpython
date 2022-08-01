@@ -10,6 +10,8 @@ nav_order: 4
 - Defining Functions
 - Returning Values
 - Conditionals
+- if Statements
+- Control Flow, elif, and else
 - Homework
 
 ---
@@ -105,3 +107,25 @@ main()
 
 ---
 ### Conditionals
+- Conditionals allow you, the programmer, to allow your program to make decisions.
+- Built within Python are a set of "operators" that are used to ask mathematical questions. (Different from mathamatical operators which perform an arethmetic function, these operators allow you to ask math based questions.)
+- Most of these will be very familure to you from other parts of your life. 
+- ```> and <``` symbols are already quite familure to you.
+- ```>=``` denotes "greater than or equal to."
+- ```<=``` denotes "less than or equal to."
+- ```==``` denotes "equals" although, special attention to be paid to the fact that this is a double equal sign as a single equal sign would assign a value.
+- ```!=``` denotes "not equal to". 
+- Conditional statements compare a left-hand term to a right-hand turm.
+
+---
+### if Statements
+- The most common way to use conditionals is through activation in an if statement to query the results of a comparison.
+- Opening ```compare.py``` let's create the following example.
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+if x < y:
+    print("x is less than y")
+```
+- Notice how your code takes the input of the user for both x and y, casts them as inegers and saves them into their respective x and y variables. Then, the ```if``` statement compares x and y. If the condition of ```x < y``` is met, the print statement is executed.
+- ```if``` statements use ```bool``` or boolen values (true or false) to decide whether or not to execute. If the statement ```x < y``` is true, the compiler will register it as ```true``` and execute the code.
