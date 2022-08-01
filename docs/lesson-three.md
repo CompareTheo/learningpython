@@ -190,6 +190,7 @@ else x == y:
     print("x is equal to y")
 ```
 - Noticed when graphed, how the relative complexity of this program has decreased through our revision.
+
 ![](../../assets/images/flow3.png)
 
 ---
