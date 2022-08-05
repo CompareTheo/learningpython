@@ -2,12 +2,13 @@
 layout: default
 title: 04 - More Conditionals and The Pythonic Way
 nav_order: 5
-nav_exclude: false
+nav_exclude: true
 ---
 # 04 - More Conditionals and The Pythonic Way
 ### Lesson Outline:
 - 03 - Conditionals and Control Flow Recap
 - Homework Review
+- Conjunction Junction... What's your function? (and/or)
 
 ---
 ### 03 - Conditionals and Control Flow Recap
@@ -64,3 +65,14 @@ In ```deep.py```, implement a program that prompts the user for the answer to th
 <script id="asciicast-0JIic0pR3pVZTqBqfuBnIygPJ" src="https://asciinema.org/a/0JIic0pR3pVZTqBqfuBnIygPJ.js" async data-autoplay="1" data-loop="1" data-rows="15" data-cols="90"></script>
 
 ---
+### Conjunction Junction... What's your function? (and/or)
+- ```or``` allows your program to decide between one or more alternative. For example, we could further edit our program as follows:
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+if x < y or x > y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+```
+- Notice that the result of our program is the same, but the complexity is decreased and the effiency of our code is increased.
