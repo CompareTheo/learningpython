@@ -61,6 +61,6 @@ In ```deep.py```, implement a program that prompts the user for the answer to th
 
 
 #### Homework Check
-<script id="asciicast-0JIic0pR3pVZTqBqfuBnIygPJ" src="https://asciinema.org/a/0JIic0pR3pVZTqBqfuBnIygPJ.js" async data-autoplay="1" data-loop="1" data-speed="2" data-rows="20" data-cols="90"></script>
+<script id="asciicast-0JIic0pR3pVZTqBqfuBnIygPJ" src="https://asciinema.org/a/0JIic0pR3pVZTqBqfuBnIygPJ.js" async data-autoplay="1" data-loop="1" data-rows="20" data-cols="90"></script>
 
 ---
