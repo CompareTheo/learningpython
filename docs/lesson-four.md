@@ -2,7 +2,7 @@
 layout: default
 title: 04 - More Conditionals and The Pythonic Way
 nav_order: 5
-nav_exclude: true
+nav_exclude: false
 ---
 # 04 - More Conditionals and The Pythonic Way
 ### Lesson Outline:
@@ -76,3 +76,39 @@ else:
     print("x is equal to y")
 ```
 - Notice that the result of our program is the same, but the complexity is decreased and the effiency of our code is increased.
+- It is, however, possible to avoid the use of ```or ``` altogether using other conditionals.
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+if x != y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+```
+- Similar to ```or```, ```and``` can be used within conditional statements.
+- Let's look at an example called ```grade.py```
+```python
+score = int(input("Score: "))
+if score >= 90 and score <= 100:
+    print("Grade: A")
+elif score >=80 and score < 90:
+    print("Grade: B")
+elif score >=70 and score < 80:
+    print("Grade: C")
+elif score >=60 and score < 70:
+    print("Grade: D")
+else:
+    print("Grade: F")
+```
+
+---
+### Lists
+- Scenario: You have set up sensors to do temperature measurements in a storage room for rare books.
+- Doing calculations with a hundred variables called ```temperature_001```, ```temperature_002```, etc., would be very slow and unwieldy. Instead, you might want concatenate all of these values into a single variable that *lists* all of the values.
+- Use a *list* to store many values together.
+    - Contained within square brackets [...].
+    - Values are separated by commas ```,```.
+```python
+temperatures = [17.3, 17.5, 17.7, 17.5, 17.6]
+print('Temps:', temperatures)
+```
