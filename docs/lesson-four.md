@@ -104,11 +104,54 @@ else:
 ---
 ### Lists
 - Scenario: You have set up sensors to do temperature measurements in a storage room for rare books.
-- Doing calculations with a hundred variables called ```temperature_001```, ```temperature_002```, etc., would be very slow and unwieldy. Instead, you might want concatenate all of these values into a single variable that *lists* all of the values.
+- Doing calculations or statistical operations with hundreds of individual variables called ```temperature_001```, ```temperature_002```, etc., would be very slow and unwieldy. Instead, you might want concatenate all of these values into a single variable that *lists* all of the values.
 - Use a *list* to store many values together.
     - Contained within square brackets [...].
     - Values are separated by commas ```,```.
+- A list contains a series of any data type: strings, ints, other lists. The items in a list are generically called "elements."
+- Lists are "mutable" - meaning that they can be changed.
 ```python
 temperatures = [17.3, 17.5, 17.7, 17.5, 17.6]
 print('Temps:', temperatures)
 ```
+- You can access the length of a string using ```len()```:
+```python
+temperatures = [17.3, 17.5, 17.7, 17.5, 17.6]
+print('Temps:', temperatures)
+print('Length:', len(temperatures))
+```
+- To access the individual elements of a list, you can simply call the position of the element in the list using square brackets. 
+- *Remember, standard indexing makes the first element count from 0*
+```python
+temperatures = [17.3, 17.5, 17.7, 17.5, 17.6]
+print('Temps:', temperatures)
+print('Temp #2:', temperatures[2]) # note that this will print the value 17.7 from the provided list. 
+```
+- Remember that lists are "mutable" - meaning that they can be changed.
+- Lists' values can be replaced by assigning to them.
+- Use an index expression on the left of the assignment to replace a value.
+```python
+temperatures = [17.3, 17.5, 17.7, 17.5, 17.6]
+temperatures[0] = 16.5
+print('Temps:', temperatures) 
+```
+- Appending elements to a list lengthens is. 
+- Use ```list_name.append``` to add items to the end of a list.
+```python
+temperatures = [17.3, 17.5, 16.5, 17.5, 17.6]
+print('temperatures is initially:', temperatures)
+temperatures.append(17.9)
+temperatures.append(18.2)
+print('temperatures has become:', temperatures)
+```
+- Note that ```append``` is a *method* of lists. It's like a function, except it is tired to particualr object.
+- You can additionally use ```del``` to remove elements from a list entirely.
+```python
+temperatures = [17.3, 17.5, 16.5, 17.5, 17.6, 17.9, 18.2]
+print('temperatures is initially:', temperatures)
+del temperatures[2]
+print('temperatures has become:', temperatures)
+```
+- ```del``` is not a function or a method so it is called first. Instead, this is what we refer to as a *statement* in the language, much like we have already seen with ```return``` and will see with other values soon. 
+
+---
