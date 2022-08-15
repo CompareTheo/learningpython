@@ -9,6 +9,9 @@ nav_exclude: false
 - 03 - Conditionals and Control Flow Recap
 - Homework Review
 - Conjunction Junction... What's your function? (and/or)
+- Lists
+- *While* Loops
+- Homework
 
 ---
 ### 03 - Conditionals and Control Flow Recap
