@@ -155,7 +155,7 @@ print('temperatures has become:', temperatures)
 - ```del``` is not a function or a method so it is called first. Instead, this is what we refer to as a *statement* in the language, much like we have already seen with ```return``` and will see with other values soon. 
 
 ---
-### Loops
+### *For* Loops
 - In short, loops are a way to do something over and over again.
 ```python
 print("meow")
@@ -166,13 +166,28 @@ print("meow")
 - In developing as a programmer, as we have discussed before, you want to conside how one could improve areas of one's code where one types the same thing over and over again. 
 - Let's imagine that the goal of this program is to "meow" 500 times. It wouldn't be logical to type 500 instances of the expression ```print("meow")```.
 - Loops enable you to creat a block of code that executes over and over again. 
-
----
-### *While* Loops
 - The ```while``` loop is nearly universal throughout all coding languages.
 - This loop will repeat a block of code over and over again as long as the condition set remains true. Let's view an example.
 ```python
 i = 3
 while i != 0:
     print("meow")
+```
+- Notice how even though this code will execute ```print("meow")``` multiple times, it doesn't really fufill the conditions we imagined and it introduces an additional problem. This code will never stop running!
+- In this case, the compiler is asking "does ```i``` not equal zero?". Becasue it never will, the program will never stop. When you get stuck in a loop that executes forever, you can press ```control-c``` on your keyboard to break out of the loop.
+- To fix this loop that lasts forever, we can edit our code as follows:
+```python
+i = 3
+while i != 0:
+  print("meow")
+  i = i - 1
+```
+- Notice that now our code executes without endlessly looping, reducing ```i``` by ```1``` for each "iteration" through the loop.
+- Iteration has special significance within coding. By iteration, we mean one cycle through the loop. The first iteration however, is the 0th iteration. The second is the 1st iteration. In programming, we count starting with 0.
+- Now we have seen all of the consitutate parts necessary to complete the task we were imaginaing. As a reminder, we wanted a program that would "meow" 500 times.
+```python
+i = 0
+while i <= 500:
+  print("meow")
+  i = i + 1
 ```
