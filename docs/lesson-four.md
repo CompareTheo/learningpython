@@ -194,9 +194,9 @@ while i <= 500:
 ### Homework
 #### Challenging Ourselves. I'm sorry. Kinda...
 
-Using while loop and an if statement write a function named name_adder which appends all the elements in a list to a new list unless the element is an empty string: "".
+>Using while loop and an if statement write a function named name_adder which appends all the elements in a list to a new list unless the element is an empty string: "".
 
-Start by using the code provided below:
+>Start by using the code provided below:
 ```python
 lst1=["Joe", "Sarah", "Mike", "Jess", "", "Matt", "", "Greg"]
 def name_adder(list):
