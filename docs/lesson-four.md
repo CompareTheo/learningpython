@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 04 - More Conditionals and The Pythonic Way
+title: 04 - Conjunctions, Lists, and Loops
 nav_order: 5
 nav_exclude: false
 ---
-# 04 - More Conditionals and The Pythonic Way
+# 04 - Conjunctions, Lists, and Loops
 ### Lesson Outline:
 - 03 - Conditionals and Control Flow Recap
 - Homework Review
@@ -155,3 +155,24 @@ print('temperatures has become:', temperatures)
 - ```del``` is not a function or a method so it is called first. Instead, this is what we refer to as a *statement* in the language, much like we have already seen with ```return``` and will see with other values soon. 
 
 ---
+### Loops
+- In short, loops are a way to do something over and over again.
+```python
+print("meow")
+print("meow")
+print("meow")
+```
+- Running this code, you'll notice that the program meows three times. 
+- In developing as a programmer, as we have discussed before, you want to conside how one could improve areas of one's code where one types the same thing over and over again. 
+- Let's imagine that the goal of this program is to "meow" 500 times. It wouldn't be logical to type 500 instances of the expression ```print("meow")```.
+- Loops enable you to creat a block of code that executes over and over again. 
+
+---
+### *While* Loops
+- The ```while``` loop is nearly universal throughout all coding languages.
+- This loop will repeat a block of code over and over again as long as the condition set remains true. Let's view an example.
+```python
+i = 3
+while i != 0:
+    print("meow")
+```
