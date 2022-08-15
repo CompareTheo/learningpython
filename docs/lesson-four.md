@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 04 - Conjunctions, Lists, and Loops
+title: 04 - Conjunctions, Lists, and While Loops
 nav_order: 5
 nav_exclude: false
 ---
-# 04 - Conjunctions, Lists, and Loops
+# 04 - Conjunctions, Lists, and *While* Loops
 ### Lesson Outline:
 - 03 - Conditionals and Control Flow Recap
 - Homework Review
