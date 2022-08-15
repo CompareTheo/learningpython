@@ -198,7 +198,6 @@ while i <= 500:
 - Start by using the code provided below:
 ```python
 lst1=["Joe", "Sarah", "Mike", "Jess", "", "Matt", "", "Greg"]
-
 def name_adder(list):
     #Type your code here.
 print(name_adder(lst1))
