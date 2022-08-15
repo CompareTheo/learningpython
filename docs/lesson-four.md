@@ -155,7 +155,7 @@ print('temperatures has become:', temperatures)
 - ```del``` is not a function or a method so it is called first. Instead, this is what we refer to as a *statement* in the language, much like we have already seen with ```return``` and will see with other values soon. 
 
 ---
-### *For* Loops
+### *While* Loops
 - In short, loops are a way to do something over and over again.
 ```python
 print("meow")
