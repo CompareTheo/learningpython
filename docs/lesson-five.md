@@ -6,32 +6,42 @@ nav_exclude: false
 ---
 # 05 - Lessons 1-4 Recap Day
 ### Lesson Outline:
-- Homework Review
-- Q&A Time
-- Working with external data
-- WHH Example
 
 ---
 ### Putting it all together - Review Lessions 1-4
-#### Functions
-- We have discussed in detail the need for/use of functions in your code applications.
-- Python has built in functions that we have used over and over again (ie. ```print()```, ```input()```) but we might want to make our own.
-- Functions serve as reusable blocks of code that are great for performing the same tasks over and over again. (In our example today, you may want to have a function that removes all of the blank entries from a list.)
-- A properly defined function consists of the following components.
-  1. Keyword ```def``` that marks the start of the function header.
-  2. A function name to uniquely identify the function. (Convention is all lowercase with an underscore to seperate words in the function name.)
-  3. Parameters through which we pass values to a function. (These are optional.)
-  4. A colon (:) to mark the end of the function header.
-  5. One or more valid pythong statements that make up the function body. Statements must have the same indentation level (usually 4 spaces).
-- Defining a function is often not very useful without a functional return statement.
-- Return is a special keyword in python that allows the function to output the value of a variable produced within the function.
+#### Example One - 100 Years
+- Create a program that asks the user to enter their name and their age. Print out a message addressed to the user that tells them the year that they will turn 100 years old. Correct responses will use f-strings to print the resulting output message.
 ```python
-def main():
-    x = int(input("What's x? "))
-    print("x squared is", square(x))
-def square(n):
-    return n * n
-main()
+name = input("What's your name? ")
+age = int(input("What is your age? "))
+year = 2022 - age + 100
+print(f"{name}, will be 100 years old in the year {year}")
 ```
+
 ---
-#### If Statements
+#### Example Two - Working with Lists
+- Take a list, say for example this one: [7,3,13,6,8,5,1,2,4,15,9,10,12,14,11]. Write a program that prints out all of the elements of the list that are less than 5. However, instad of printing the elemens one-by-one, make a new list that has all of the elements less than 5 from this list in it and print out this new list.
+```python
+numbers = [7,3,13,6,8,5,1,2,4,15,9,10,12,14,11]
+underFive = []
+for element in numbers:
+    if element < 5:
+        underFive.append(element)
+print(numbers)
+print(underFive)
+```
+
+---
+#### Example Three - Sierra Together
+- Given this list of sierra oclc numbers, [1060588404,1097465769,1242107496,1060588404,1289623505,1289623505,1097465769,1242107496] create a program that deduplicates these numbers into a clean list. Using a method discussed in previously, be sure to traverse the list and then append the first occurrence of the element to the new list, ignoring all duplicated elements. 
+```python
+sierra_list = [1060588404,1097465769,1242107496,1060588404,1289623505,1289623505,1097465769,1242107496]
+deduplicated = []
+for i in sierra_list:
+    if i not in deduplicated:
+        deduplicated.append(i)
+print(f"The orignal list is {sierra_list}")
+print(f"The list after removing duplicates: {deduplicated}")
+```
+
+---
