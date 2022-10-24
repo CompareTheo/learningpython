@@ -9,6 +9,7 @@ nav_exclude: false
 - Libraries
 - Command-Line Arguments
 - Open Function
+- With Keyword
 
 ---
 ### Libraries
@@ -85,3 +86,29 @@ file.write(f"{name}\n")
 file.close()
 ```
 - Notice that the line with ```file.write``` has been motified to use an ```f-string``` and to include a line break at the end of each name. 
+
+---
+### With Keyword
+- The keyword ```with``` allows you to automate the closing of a file.
+```python
+name = input("What is your name? ")
+with open("names.txt", "a") as file:
+    file.write(f"{name}\n")
+```
+- Take note that the line below ```with``` is indented.
+- To this point, we have been exclusivly writing to a file. What if we wanted to read from a file. 
+```python
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+for line in lines:
+    print("hello ", line)
+```
+- Notice that ```readlines``` has a special ability to read all the lines of a file and store them in a file called lines.
+- Running your program, you will notice that the output is quite ugly. There seem to be multiple line breaks where there should be only one.
+- There are many approaches to fix this issue. However, here is one simple way:
+```python
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+for line in lines:
+    print("hello ", line.rstrip())
+```
