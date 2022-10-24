@@ -9,8 +9,6 @@ nav_exclude: false
 - Libraries
 - Command-Line Arguments
 - Open Function
-- With Function
-- CSVs
 
 ---
 ### Libraries
@@ -51,3 +49,41 @@ print("Hello, my name is ", sys.argv[1])
 - Notice that the program is going to look at what the user typed in the command line.
 - Currently, if you run the program by typing ```python name.py Jason``` into the terminal window, you will see ```Hello, my name is Jason```. 
 - You can learn more in Python's documentation of [```sys```](https://docs.python.org/3/library/sys.html)
+
+---
+### File I/O Overview
+- Up until now, everything we've programmed has stored information in memory. That is, once the program is ended, all information gathered from the user or generaged by the program is lost.
+- File I/O is the ability of a program to take a file as input or create a file as output.
+
+---
+### Open Function
+- ```open``` is a function that is built into Python that allows you to open a file and utilize it in your program.
+- The ```open``` function allows you to open a file such that you can read from it or write to it.
+- Let us look at a simple example to show how to enable file I/O in your program. 
+```python
+name = input("What is your name? ")
+file = open("names.txt", "w")
+file.write(name)
+file.close()
+```
+- Notice that the ```open``` function optens a file called ```names.txt``` with writing enabled, as signified by the ```w```. The code above assigns that opened file to a variable called ```file```.
+- The line ```file.write(name)``` writes the name to the text file. The line after closes that file.
+- Testing out your code, you will notice that, as written, your program will entirely rewrite the ```names.txt``` file each time.
+- Ideally, we want to be able to append each of our names to the file. In order to do that, we must modify our code as follows:
+```python
+name = input("What is your name? ")
+file = open("names.txt", "a")
+file.write(name)
+file.close()
+```
+- Note that the only change to our code is that the ```w``` "write" has been changed to an ```a``` for "append".
+- After running this program with multiple names, you might notice that all of the names are running together. The names are being appended without any gaps between each of the names. Here's how we fix that issue.
+```python
+name = input("What is your name? ")
+file = open("names.txt", "a")
+file.write(f"{name}\n")
+file.close()
+```
+- Notice that the line with ```file.write``` has been motified to use an ```f-string``` and to include a line break at the end of each name. 
+
+---
