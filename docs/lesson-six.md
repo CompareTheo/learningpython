@@ -85,5 +85,3 @@ file.write(f"{name}\n")
 file.close()
 ```
 - Notice that the line with ```file.write``` has been motified to use an ```f-string``` and to include a line break at the end of each name. 
-
----
