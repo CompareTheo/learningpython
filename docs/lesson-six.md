@@ -112,3 +112,7 @@ with open("names.txt", "r") as file:
 for line in lines:
     print("hello ", line.rstrip())
 ```
+
+---
+### Putting it all together
+- Given two ```.txt``` files that have lists of numbers in them, find the numbers that are overlapping. One ```.txt``` file has a list of all prime numbers under 1000, and the other has a list of happy numbers up to 1000.
